@@ -26,7 +26,7 @@ header, footer, section {
 }
 
 .desktop-menu {
-    width: 40%;
+    width: 38%;
     display: inline-block;
     position: relative;
 }
@@ -90,8 +90,8 @@ a:active {
 
 .world {
     text-decoration: line-through;
-    margin-left: 6px;
-    margin-right: 6px;
+    padding-left: 6px;
+    padding-right: 6px;
 }
 
 .circle, svg {
@@ -156,7 +156,7 @@ h2.episodes-title {
     font-size: 42px;
     color: #FFFFFF;
     margin-top: 10%;
-    margin-left: 13%;
+    padding-left: 13%;
     margin-bottom: 3%;
 }
 
@@ -170,15 +170,25 @@ div.podcast {
 }
 iframe {
     width: 41%;
+    height: 232px;
+    border: 0px;
 }
-
-.phone {
-    width: 32%;
+div.photo {
+    width: 50%;
+    display: inline-block;
+}
+img.phone {
+    width: 65%;
     display: inline-block;
     position: relative;
-    margin-left: 13%;
-    margin-top: -10%;
-    margin-bottom: 5%;
+    top: -137px;
+    left: 200px;
+}
+
+div.information {
+    width: 38%;
+    display: inline-block;
+    position: absolute;
 }
 
 .sub-title {
@@ -191,28 +201,25 @@ iframe {
 }
 
 h2.sub-title.us {
-    width: 35%;
     display: inline-block;
-    position: absolute;
-    margin-left: 6%;
+    padding-left: 6%;
 }
 
 .our-posturings{
     font-family: IBM Plex Mono;
-    font-size: 16px;
+    font-size: 18px;
     color: #060A24;
     letter-spacing: 0;
     line-height: 24px;
-    width: 32%;
+    width: 100%;
     display: inline-block;
-    position: absolute;
     margin-top: 5%;
-    margin-left: 6%;
+    padding-left: 6%;
 }
 
 h2.sub-title.invited {
     width: 35%;
-    margin-left: 15%;
+    padding-left: 15%;
     margin-bottom: 2%;
 }
 
@@ -229,7 +236,7 @@ img.picture {
 h2.sub-title.issues {
     width: 40%;
     margin-top: 4%;
-    margin-left: 15%;
+    padding-left: 15%;
     margin-bottom: 4%;
 }
 
@@ -364,7 +371,7 @@ img.socialnet-logo {
         width: 10%;
         position:absolute;
         top: 7px;
-        right: 0px;
+        right: 7px;
     }
 
     div.container-burger {
@@ -494,30 +501,40 @@ img.socialnet-logo {
         padding-right: 5%;
     }
 
-    .phone {
-        width: 95%;
-        margin-left: 2%;
-        margin-top: -35%;
+    div.photo {
+        width: 100%;
+    } 
+
+    img.phone {
+        width: 100%;
+        left: 0px;
+    }
+
+    div.information {
+        width: 100%;
+        position: relative;
     }
 
     h2.sub-title.us {
         position: relative;
-        width: 90%;
         font-size: 36px;
-        margin-left: 3%;
+        padding-left: 3%;
+        width: 80%;
     }
 
     .our-posturings {
-        width: 90%;
+        width: 100%;
         font-size: 14px;
         position: relative;
-        margin-left: 3%;
+        padding-left: 3%;
+        padding-right: 6%;
     }
 
     h2.sub-title.invited {
         width: 90%;
         font-size: 36px;
         margin-top: 10%;
+        padding-left: 3%;
     }
 
     img.picture {
@@ -528,7 +545,7 @@ img.socialnet-logo {
         width: 90%;
         font-size: 36px;
         margin-top: 12%;
-        margin-left: 3%;
+        padding-left: 3%;
         margin-bottom: 4%;
     }
 
@@ -599,5 +616,20 @@ img.socialnet-logo {
     
 }
 
+@media screen and (min-width: 768px) and (max-width: 1000px) {
+    div.photo {
+        width: 50%;
+        left: 100px;
+    }
 
+    img.phone {
+        width: 72%;
+        left: 100px;
+    
+    }
+
+    div.information {
+        width: 42%;
+    }
+}
 
